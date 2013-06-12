@@ -1,0 +1,336 @@
+html{
+	background: #282828;
+}
+body{
+	background: #282828;
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size:1.2em;
+	overflow-x:hidden;
+}
+
+/*--new stuff--*/
+
+#header {
+	text-align: center;
+	border-bottom: 4px solid #c8c8c8;
+}
+.black-grad {
+	background: rgb(43,43,43); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJiMmIyYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxODE4MTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(43,43,43,1) 0%, rgba(24,24,24,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,43,43,1)), color-stop(100%,rgba(24,24,24,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(24,24,24,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(24,24,24,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(24,24,24,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(43,43,43,1) 0%,rgba(24,24,24,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#181818',GradientType=0 ); /* IE6-8 */
+}
+.scoreboard-grad {
+	background: rgb(102,102,102); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM2NjY2NjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM1ODU4NTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(102,102,102,1) 50%, rgba(88,88,88,1) 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(102,102,102,1)), color-stop(50%,rgba(88,88,88,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(102,102,102,1) 50%,rgba(88,88,88,1) 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(102,102,102,1) 50%,rgba(88,88,88,1) 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(102,102,102,1) 50%,rgba(88,88,88,1) 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(102,102,102,1) 50%,rgba(88,88,88,1) 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#585858',GradientType=0 ); /* IE6-8 */
+}
+
+
+#header #logo {
+	width: 104px;
+	height: 96px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+	background: url('/assets/smackley-cup-logo.png') no-repeat center center;
+	background-size: contain;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -55px;
+	z-index: 15;
+}
+#header #scoreboard {
+	width: 100%;
+	position: relative;
+	top: 15px;
+}
+#header #scoreboard #chicago-side,
+#header #scoreboard #boston-side {
+	display: inline-block;
+	height: 61px;
+	margin: 4px 15px;
+	min-width: 61px;
+}
+#header #scoreboard #chicago-side {
+	float: left;
+	text-align: left;
+	background: url('/assets/smackley-cup-team-logo-chi.png') no-repeat left center;
+}
+#header #scoreboard #boston-side {
+	float: right;
+	text-align: right;
+	background: url('/assets/smackley-cup-team-logo-bos.png') no-repeat right center;
+}
+
+#header #scoreboard > div h2 {
+	display: none;
+	border-bottom: 1px solid #303030;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 200;
+	text-transform: uppercase;
+	text-align: center;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	margin-top: 7px;
+}
+
+#header #scoreboard #chicago-side h2 { margin-left: 90px; }
+#header #scoreboard #boston-side h2 { margin-right: 90px; }
+
+#header #scoreboard > div h2 span {
+	border: 1px solid #000;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	padding: 5px 0;
+	width: 150px;
+	display: block;
+}
+#header #scoreboard > div h2 span em {
+	font-size: 0.3em;
+	margin-bottom: 2px;
+	display: block;
+}
+
+#header #tweetboard {
+	width: 100%;
+	text-align: center;
+	background: none;
+	height: 62px;
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+#header #tweetboard #chicago-count,
+#header #tweetboard #boston-count {
+	width: 50%;
+	color: #fff;
+}
+#header #tweetboard #chicago-count { float: left; text-align: left; }
+#header #tweetboard #boston-count { float: right; text-align: right; }
+
+#header #tweetboard > div h3 {
+	display: inline-block;
+	font-size: 0.7em;
+	margin-bottom: 4px;
+}
+#header #tweetboard #chicago-count h3{  float: left; margin-left: 10px; }
+#header #tweetboard #boston-count h3 { float: right; margin-right: 10px; }
+
+
+#header #tweetboard > div .board {
+	width: 86%;
+	height: 42px;
+	text-align: center;
+}
+#header #tweetboard > div .board .score {
+	display: block;
+	height: 42px;
+	line-height: 44px;
+	font-size: 2em;
+	font-family: 'Codystar', cursive;
+	font-weight: 700;
+}
+
+#header #tweetboard #chicago-count .board .score { color: #c4162c; }
+#header #tweetboard #boston-count .board .score { color: #eabc03; }
+
+#header #tweetboard #chicago-count .board { float: right; margin-right: 7%; margin-left: 7%; }
+#header #tweetboard #boston-count .board { float: left; margin-right: 7%; margin-left: 7%; }
+
+.wrapper {
+	max-width: 1024px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#main-ice {
+	width: 100%;
+	height: 100%;
+	background: url('/assets/images/ice-bkg.png') repeat center center;
+}
+
+#ice {
+	width: 100%;
+	position: relative;
+}
+
+#ice .bos,
+#ice .chi {
+	width: 90%;
+	padding: 20px 5% 40px 5%;
+	text-align: center;
+}
+
+#ice > div p {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 100;
+	width: 100%;
+	padding: 0;
+}
+
+#ice > div p em {
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 0;
+	position: relative;
+	top: 0.35em;
+	margin: 0 0 0 5px;
+}
+#ice > div p em.left {
+	margin: 0 5px 0 0;
+}
+#ice .bos p em {
+	color: #ff9900;
+}
+#ice .chi p em {
+	color: #ff0000;
+}
+
+
+#main-copy {
+	text-align: center;
+	background: #282828;
+	border-top: 4px solid #fff;
+	padding: 40px 15px 30px 15px;
+}
+#main-copy p {
+	max-width: 800px;
+	color: #666666;
+	font-size: 1em;
+	line-height: 1.25em;
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+ #center-ice {
+ 	width: 44px;
+ 	height: 100%;
+ 	background: #001a81;
+ 	opacity: 0.5em;
+ 	position: absolute;
+ 	left: 50%;
+ 	margin-left: -22px;
+ }
+
+#leo-link, #arnold-link {
+	float: left;
+	display: inline-block;
+	line-height: 8px;
+	color: #fff;
+	font-size: 0.7em;
+	padding: 15px;
+}
+#arnold-link { float: right; }
+
+#footer{
+	bottom:0;
+	height:30px;
+	left:auto;
+	padding:10px 0 20px;
+	position:fixed;
+	width:100%;
+	z-index:1000;
+	overflow:hidden;
+	border-top: 1px solid #222;
+}	
+@media only screen and (min-width: 768px) {
+	
+	#header {
+		margin-top: 80px;
+	}
+
+	#header #logo {
+		width: 206px;
+		height: 190px;
+		top: -70px;
+		margin-left: -108px;
+	}
+
+	#header-design {
+		background: #eabc03;
+		position: absolute;
+		top: 0px;
+		left: 0;
+		width: 100%;
+		right: 0;
+		height: 100px;
+		z-index: -1;
+	}
+	#header-design .left-design {
+		background: #c4162c;
+		width: 50%;
+		left: 0;
+		height: 100%;
+		border-right: 5px solid #fff;
+	}
+
+	#header #scoreboard > div h2 {
+		display: inline-block;
+	}
+
+	#header #scoreboard {
+		background: #191919;
+		height: 69px;
+		border-bottom: 1px solid #373737;
+		top: -10px;
+		-webkit-border-radius: 34px;
+		border-radius: 34px;
+		z-index: 10;
+	}
+
+#header #tweetboard {
+	padding-top: 55px;
+}
+
+#header #tweetboard > div h3 {
+	font-size: 1.25em;
+	line-height: 44px;
+}
+
+#header #scoreboard #chicago-side,
+#header #scoreboard #boston-side {
+	margin: 4px;
+}
+
+#header #tweetboard #chicago-count .board { margin-right: 2px; width: 120px; margin-left: 0; }
+#header #tweetboard #boston-count .board { margin-left: 2px; width: 120px; margin-left: 0; }
+
+	#ice .bos,
+	#ice .chi {
+		width: 40%;
+	}
+	#ice .bos {
+		float: right;
+		text-align: left;
+	}
+	#ice .chi {
+		float: left;
+		text-align: right;
+	}
+
+	#footer {
+		height:55px;
+	}
+
+	#leo-link, #arnold-link { line-height: 34px; }
+}
